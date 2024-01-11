@@ -1,12 +1,14 @@
 ﻿using SQLite4Unity3d;
 
-public class Person  {
+public class Person
+{
 
-	[PrimaryKey, AutoIncrement]
-	public int Id { get; set; }
-	public string Name { get; set; }
-	public string Surname { get; set; }
-	public int Age { get; set; }
+    [PrimaryKey, AutoIncrement]
+    public int Id;
+
+    public string Name;
+    public string Surname;
+    public int Age;
 
 	public override string ToString ()
 	{

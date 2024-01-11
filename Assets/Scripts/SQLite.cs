@@ -428,7 +428,7 @@ namespace SQLite4Unity3d
 			
 			if (count == 0) { //Possible bug: This always seems to return 0?
 				// Table already exists, migrate it
-				MigrateTable (map);
+				// MigrateTable (map);
 			}
 
 			var indexes = new Dictionary<string, IndexInfo> ();
