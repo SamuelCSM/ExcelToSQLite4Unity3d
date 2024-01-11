@@ -428,7 +428,7 @@ namespace SQLite4Unity3d
 			
 			if (count == 0) { //Possible bug: This always seems to return 0?
 				// Table already exists, migrate it
-				// MigrateTable (map);
+                MigrateTable (map);
 			}
 
 			var indexes = new Dictionary<string, IndexInfo> ();
@@ -586,19 +586,18 @@ namespace SQLite4Unity3d
 
         public class ColumnInfo
 		{
-//			public int cid { get; set; }
+//			public int cid ;
 
-			[Column ("name")]
-			public string Name { get; set; }
+            [Column("name")] public string Name;
 
 //			[Column ("type")]
-//			public string ColumnType { get; set; }
+//			public string ColumnType ;
 
-			public int notnull { get; set; }
+            public int notnull;
 
-//			public string dflt_value { get; set; }
+//			public string dflt_value ;
 
-//			public int pk { get; set; }
+//			public int pk;
 
 			public override string ToString ()
 			{
