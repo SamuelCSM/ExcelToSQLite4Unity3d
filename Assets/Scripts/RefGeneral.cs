@@ -19,6 +19,6 @@ public class RefGeneral : SQLDataBase<string, RefGeneral>
 
     public override string ToString()
     {
-        return string.Format("[General: key={0}, value={1}, IsOwen={2}, viewType = {3}]", key, value);
+        return string.Format("[General: key={0}, value={1}]", key, value);
     }
 }
